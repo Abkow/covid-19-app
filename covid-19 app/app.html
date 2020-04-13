@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 APP</title>
+    <link rel="stylesheet" href="module/style.css" />
+  </head>
+  <body>
+    <div id="body">
+      <div class="left-panel">
+        <div class="left-panel-header">
+          <div class="left-panel-header-title">Total confirmed</div>
+          <div class="left-panel-header-number" id="total_confirmed"></div>
+        </div>
+        <div class="left-panel-countries">
+          <div class="left-panel-countries-title">
+            Total confirmed by country
+          </div>
+          <div class="left-panel-countries-body" id="countries_confirmed">
+              
+          </div>
+        </div>
+        <div class="left-panel-bottom">
+          <div class="left-panel-bottom-date">Last update : <span id="last_date"></span></div>
+            </div>
+      </div>
+      
+      <div class="main-panel">
+        <div class="main-panel-header">
+          <div class="inputs">
+
+            <div class="search">
+              <input type="text" placeholder="search country" id="search_country"/>
+              <div class="guest">
+                
+              </div>
+            </div>
+
+            <div>
+              <select id="months">
+                <option selected disabled>Choose month</option>
+              </select>
+            </div>
+
+            <div class="search_img">
+                <button>
+                    <img src="img/search.png" alt="" width="20px">
+                </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main-panel-body">
+          <h2>COVID-19 CASES FOR <span id="by_country">ALL COUTRIES</span></h2>
+          <div class="cards">
+            <div class="card">
+              <div class="title">
+                  Confirmed
+              </div>
+              <div class="number" id="confirmed">
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="title">
+                    Recover 
+                </div>
+                <div class="number" id="recover">
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="title">
+                    Death
+                </div>
+                <div class="number" id="death">
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="main-panel-footer">
+          <span>Developed by </span>
+          <span><a href="http://uct.edu.so/">#UCT</a></span>
+          students
+        </div>
+      </div>
+    </div>
+
+    <script src="module/jquery.js"></script>
+    <script src="module/index.js"></script>
+  </body>
+</html>
